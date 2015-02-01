@@ -4,6 +4,7 @@
 	<head>
 		<title>Grade Calculator</title>
 		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<script src="JS/gradeCalc.js"></script>
 	</head>
 	<body>
 		<div id="header">
@@ -18,12 +19,14 @@
 				<label for="possible">Enter the possible points</label>
 			</div>
 			<div id="buttonsRight">
-				<input type="text" id="recieved" name="receivedPoints">
+				<input type="text" id="received" name="receivedPoints">
 				<input type="text" id="possible" name="possiblePoints">
 			</div>
 		</div>
 		<div id="calcButton">
-			<button type="button">Calculate!</button>
+			<button type="button" onclick="calculateGrade()">Calculate!</button>
+		</div>
+		<div id="grade">
 		</div>
 	</body>
 </html>
